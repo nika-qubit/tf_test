@@ -61,7 +61,7 @@ resource "google_biglake_iceberg_catalog_iam_member" "biglake_admin" {
 resource "google_project_iam_member" "i_am_editor" {
   project = google_biglake_iceberg_catalog.rest_catalog.project
   role = "roles/bigquery.dataEditor"
-  member = "user:ningk@google.com"
+  member = "${local.who_am_i}"
 }
 
 # Only needed for requester-pay buckets. Otherwise, table update will permission denied.
