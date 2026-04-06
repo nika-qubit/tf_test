@@ -11,6 +11,7 @@ provider "google" {
 
   # Dev stack
   biglake_iceberg_custom_endpoint = "https://ningk.c.googlers.com:8790/"
+  ca_certificate_file = "/tmp/certs/local/ca.pem"
 
   # Dev stack and test environment common
   # - staging IAM
