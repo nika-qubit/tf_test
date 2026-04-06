@@ -7,10 +7,10 @@ provider "google" {
   billing_project = "ningk-stackoverflow"
 
   #Test environment
-  biglake_iceberg_custom_endpoint = "https://test-biglake.sandbox.googleapis.com/"
+  # biglake_iceberg_custom_endpoint = "https://test-biglake.sandbox.googleapis.com/"
 
   # Dev stack
-  # biglake_iceberg_custom_endpoint = "https://ningk.c.googlers.com:8790/"
+  biglake_iceberg_custom_endpoint = "https://ningk.c.googlers.com:8790/"
 
   # Dev stack and test environment common
   # - staging IAM

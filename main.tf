@@ -1,5 +1,5 @@
 locals {
-  irc_catalog_name = "ningk-test-rest"
+  irc_catalog_name = "ningk-dev-rest"
   irc_namespace_name = "uit"
   who_am_i = "user:ningk@google.com"
 }
